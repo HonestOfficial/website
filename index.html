@@ -1,6 +1,25 @@
 <html>
 <body bgcolor="#208000">
   <style>
+    @import "compass/css3";
+
+/*Be sure to look into browser prefixes for keyframes and annimations*/
+.flash {
+   animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
+}
+  </style>
+<h1 class="flash">If you see this ethan is mad!!!</h1>
+  <style>
 .rainbow-text {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
   -webkit-background-clip: text;
